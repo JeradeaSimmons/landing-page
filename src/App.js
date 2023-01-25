@@ -1,4 +1,5 @@
-
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './App.css';
 
 function App() {
@@ -12,5 +13,11 @@ function App() {
     </div>
   );
 }
+function Hello(props) {
+  return <h1>Hello World!</h1>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Hello />);
 
 export default App;
